@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html class="csstransforms csstransforms3d csstransitions">
+<!-- saved from url=https://rmcong.github.io/index.html -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Huafeng Li</title>
+    <link href="./files/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./files/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./files/prettyPhoto.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./files/css" rel="stylesheet" type="text/css">
+    <style>
+        /* 重置浏览器默认边距 */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .people-photo {
+            border-radius: 50%;
+            height: 200px !important;
+            width: 200px !important;
+            box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 5px;
+        }
+        .thumbnail-mvp {
+            padding: 4px;
+            margin-bottom: 20px;
+            line-height: 1.42857143;
+            text-align: center;
+        }
+        .thumbnail-people {
+            padding: 4px;
+            margin-bottom: 5px;
+            line-height: 1.42857143;
+            text-align: center;
+        }
+        .container-fluid {
+            font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        .academicegree {
+            font-size: 2.28rem;
+            margin: 1.14rem 0 0.912rem 0;
+        }
+        .row:nth-child(2n) {
+            background: whitesmoke;
+        }
+        .row {
+            margin-bottom: 50px;
+        }
+        .people-topic {
+            font-style: italic;
+            color: #1a237e;
+        }
+        /* 侧边栏样式 */
+        .sidebar {
+            position: fixed;
+            top: 72px; /* 调整此值以确保侧边栏在导航栏下方 */
+            left: 0;
+            width: 300px; /* 将侧边栏宽度固定为400像素 */
+            padding: 0px;
+            background-color: #f5f5f5;
+            height: calc(100% - 80px); /* 高度减去导航栏高度 */
+            overflow-y: auto;
+        }
+        /* 内容区域样式 */
+        .main-content {
+            margin-left: 300px; /* 与侧边栏宽度一致 */
+            padding: 20px;
+            background-color: #ffffff; /* 将背景色改为 #ffffff */
+        }
+        /* 响应式布局 */
+        @media (max-width: 767px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                top: 0;
+            }
+            .main-content {
+                margin-left: 0;
+            }
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .content {
+            margin-top: 80px; /* 与导航栏高度一致 */
+        }
+    </style>
+</head>
+<body>
+    <!---start-header--->
+    <div class="header">
+        <div class="wrap">
+            <!---start-logo--->
+            <div class="logo">
+                <a href="./index.html">Huafeng Li</a>
+            </div>
+            <!---End-logo--->
+            <!---start-top-nav--->
+            <div class="top-nav">
+                <ul>
+                    <li id="Home" onclick="func('Me')"><a href="./index.html" class="scroll">Home</a></li>
+                    <li id="Profile" onclick="func('Profile')"><a href="./Profile.html" class="scroll">Profile</a></li>
+                    <li id="Publications" onclick="func('Publications')"><a href="./Publication.html" class="scroll">Publications</a></li>
+                    <li id="MVPLab" onclick="func('MVP Lab')"><a href="./CVIP.html" class="scroll">CVIP Group</a></li>
+                    <!-- <li id="Profile-chinese" onclick="func('Profile-chinese')"><a href="./Profile-chinese.html" class="scroll">中文简介</a></li> -->
+                    <li id="Contact" onclick="func('Contact')"><a href="./Contact.html" class="scroll">Contact</a></li>
+                </ul>
+            </div>
+            <div class="clear"> </div>
+            <!---End-top-nav--->
+         </div>
+    </div>
+
+    <script> 
+    var lastname = 'Me';
+    function func(name){
+        var div = document.getElementById(name); 
+        div.className = 'active'; 
+        div = document.getElementById(lastname); 
+        div.className = ''; 
+        lastname = name;
+    }
+    function coming_soon()
+    {
+        alert("Coming soon.");
+    }
+    </script> 
+
+    <!---End-header--->
+    <div class="content">
+        <div class="container-fluid">
+            <!-- 侧边栏 -->
+            <div class="sidebar">
+                <!-- 侧边栏内容 -->
+                <br>
+                <br>
+                <br>
+                <div class="thumbnail-people">
+                    <a href="#">
+                        <img src="./sub_img/touxiang.png" class="people-photo">
+                    </a>
+                </div>
+                <br>
+                <ul style="text-align: center; list-style: none; padding: 0;">
+                    <li><strong>Huafeng Li</strong></li><br>
+                    <li>Professor@Kust</li><br>
+                    <li>Kunming Yunnan China</li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <ul style="text-align: center; list-style: none; padding: 0;">
+                    
+                    <li><a href="mailto:hfchina99@163.com">Email</a></li><br>
+                    <li><a href="https://github.com/lhf12278">Github</a></li><br>
+                    <li><a href="https://scholar.google.com/citations?user=njjX8D0AAAAJ&hl=en&oi=ao">Google Scholar</a></li><br>
+
+                </ul>
+            </div>
+            <!-- 主内容区域 -->
+            <div class="main-content">
+                  <div class="content">
+        <div class="grid3">
+            <div class="grid3-content">
+        <h3><b>Selected Publications and Patents:</b></h3>
+    
+                
+
+    
+    <!--COPYRIGHT: The copyright of the following materials belongs to corresponding publishers. 
+They are provided only for research and educational use that does not conflict to the interests of the publishers.
+-->
+      </ul>
+            
+<!--            
+<h4><b>Pre-print:</b></h4>
+<ul class="graid3-ul">
+<div style="text-align: justify; display: block; margin-right: auto;">
+                
+
+  </ul>
+  <hr />-->
+                
+
+    <hr />  
+
+
+                
+<h4><b>2024:</b></h4>
+        <ul class="graid3-ul">
+  <div style="text-align: justify; display: block; margin-right: auto;">    
+
+<li>Minghong Xie, Mengzhao Wang, Huafeng Li, Yafei Zhang, Dapeng Tao, Zhengtao Yu
+  <a href="https://arxiv.org/abs/2410.23570" target="_blank"><font color="#0000FF">"Phrase Decoupling Cross-Modal Hierarchical Matching and Progressive Position Correction for Visual Grounding"</font></a>, 
+  <ud2>IEEE Transactions on Multimedia</ud2>  
+  <a href="https://github.com/X7J92/VGNet" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Keying Du, Huafeng Li, Yafei Zhang, Zhengtao Yu
+  <a href="https://arxiv.org/abs/2309.06118" target="_blank"><font color="#0000FF">"CHITNet: A Complementary to Harmonious Information Transfer Network for Infrared and Visible Image Fusion"</font></a>, 
+  <ud2>IEEE Transactions on Instrumentation and Measurement</ud2>  
+  <a href="https://github.com/lhf12278/CHITNet" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Huafeng Li, Shedan Yang, Yafei Zhang, Dapeng Tao, Zhengtao Yu
+  <a href="https://arxiv.org/pdf/2308.11994" target="_blank"><font color="#0000FF">"Progressive Feature Mining and External Knowledge-Assisted Text-Pedestrian Image Retrieval"</font></a>, 
+  <ud2>IEEE Transactions on Multimedia</ud2>  
+</li>
+
+
+<li>Y. Zhang, Z. Li, H. Li and D. Tao, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/10755138" target="_blank"><font color="#0000FF">"Prototype-Driven and Multi-Expert Integrated Multi-Modal MR Brain Tumor Image Segmentation"</font></a>, 
+  <ud2>IEEE Transactions on Instrumentation and Measurement</ud2>, doi: 10.1109/TIM.2024.3500067.  
+  <a href="https://github.com/Linzy0227/PDMINet." target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Li, Huafeng and Fang, Jiaqi and Zhang, Yafei and Liu, Yu, 
+  <a href="https://arxiv.org/abs/2411.12586" target="_blank"><font color="#0000FF">Infrared-Assisted Single-Stage Framework for Joint Restoration and Fusion of Visible and Infrared Images under Hazy Conditions</font></a>, 
+  <ud2>arXiv preprint</ud2>, 2024.
+</li>
+
+<li>Yang, Zengyi and Zhang, Yafei and Li, Huafeng and Liu, Yu, 
+  <a href="https://arxiv.org/abs/2411.09387" target="_blank"><font color="#0000FF">Instruction-Driven Fusion of Infrared-Visible Images: Tailoring for Diverse Downstream Tasks</font></a>, 
+  <ud2>arXiv preprint</ud2>, 2024.
+</li>
+
+<li>Xie, Minghong and Wang, Mengzhao and Li, Huafeng and Zhang, Yafei and Tao, Dapeng and Yu, Zhengtao, 
+  <a href="https://arxiv.org/abs/2410.23570" target="_blank"><font color="#0000FF">Phrase Decoupling Cross-Modal Hierarchical Matching and Progressive Position Correction for Visual Grounding</font></a>, 
+  <ud2>arXiv preprint</ud2>, 2024.  
+  <a href="https://github.com/X7J92/VGNet" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Li, Fan and Zhou, Hang and Li, Huafeng and Zhang, Yafei and Yu, Zhengtao, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/10701572" target="_blank"><font color="#0000FF">Person text-image matching via text-feature interpretability embedding and external attack node implantation</font></a>, 
+  <ud2>IEEE Transactions on Emerging Topics in Computational Intelligence</ud2>, 2024.  
+  <a href="https://github.com/lhf12278/SAA" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Li, Huafeng and Zhang, Chen and Hu, Zhanxuan and Zhang, Yafei and Yu, Zhengtao, 
+  <a href="https://www.sciencedirect.com/science/article/abs/pii/S0893608024002739" target="_blank"><font color="#0000FF">Interactive attack-defense for generalized person re-identification</font></a>, 
+  <ud2>Neural Networks</ud2>, vol. 176, pp. 106349, 2024.  
+  <a href="https://github.com/lhf12278/IAD." target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Zhang, Fan and Liu, Huiying and Wang, Jinjiang and Lyu, Jun and Cai, Qing and Li, Huafeng and Dong, Junyu and Zhang, David, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S0031320324001778" target="_blank"><font color="#0000FF">Cross co-teaching for semi-supervised medical image segmentation</font></a>, 
+  <ud2>Pattern Recognition</ud2>, vol. 152, pp. 110426, 2024.  
+  <a href="https://github.com/Fan-NWPU/CroCT" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Yu, Xiaoyan and Zhou, Shen and Li, Huafeng and Zhu, Liehuang, 
+  <a href="https://arxiv.org/abs/2407.19139" target="_blank"><font color="#0000FF">Multi-Expert Adaptive Selection: Task-Balancing for All-in-One Image Restoration</font></a>, 
+  <ud2>arXiv preprint</ud2>, 2024.  
+  <a href="https://github.com/zhoushen1/MEASNet" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Xu, Kaixiong and Li, Huafeng and Chai, Yi and Guo, Maoyun, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/10601528" target="_blank"><font color="#0000FF">Feature Adaptive Modulation and Prototype Learning for Domain Generalization Intelligent Fault Diagnosis</font></a>, 
+  <ud2>IEEE Transactions on Industrial Informatics</ud2>, 2024.
+</li>
+<li>Hu, Qingsong and Li, Huafeng and Hu, Zhanxuan and Nie, Feiping, 
+  <a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253524000976" target="_blank"><font color="#0000FF">Diverse semantic information fusion for Unsupervised Person Re-Identification</font></a>, 
+  <ud2>Information Fusion</ud2>, vol. 107, pp. 102319, 2024.  
+  <a href="https://github.com/qingsonghu08/FuseDSI" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Gao, Yu and Zheng, Xutao and Li, Jinxing and Zong, Lijun and Yin, Hongpeng and Li, Huafeng and Lu, Guangming, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/10531759/" target="_blank"><font color="#0000FF">Disentanglement Learning With Adaptive Centroid Alignment for Multiple Target Domains Fault Diagnosis</font></a>, 
+  <ud2>IEEE Transactions on Industrial Informatics</ud2>, 2024.
+</li>
+
+<li>Zhang, Fan and Liu, Huiying and Duan, Xiaojun and Wang, Binglu and Cai, Qing and Li, Huafeng and Dong, Junyu and Zhang, David, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S0957417423032748" target="_blank"><font color="#0000FF">DSLSM: Dual-kernel-induced statistic level set model for image segmentation</font></a>, 
+  <ud2>Expert Systems with Applications</ud2>, vol. 242, pp. 122772, 2024.
+</li>
+
+<li>Li, Zhiyuan and Zhang, Yafei and Li, Huafeng and Chai, Yi and Yang, Yushi, 
+  <a href="https://www.sciencedirect.com/science/article/abs/pii/S1746809424000703" target="_blank"><font color="#0000FF">Deformation-aware and reconstruction-driven multimodal representation learning for brain tumor segmentation with missing modalities</font></a>, 
+  <ud2>Biomedical Signal Processing and Control</ud2>, vol. 91, pp. 106012, 2024.  
+  <a href="https://github.com/Linzy0227/SRMNet" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Li, Huafeng and Liu, Junyu and Zhang, Yafei and Liu, Yu, 
+  <a href="https://link.springer.com/article/10.1007/s11263-023-01948-x" target="_blank"><font color="#0000FF">A deep learning framework for infrared and visible image fusion without strict registration</font></a>, 
+  <ud2>International Journal of Computer Vision</ud2>, vol. 132, no. 5, pp. 1625–1644, 2024.
+</li>
+
+<li>Li, Huafeng and Yang, Zhenmei and Zhang, Yafei and Tao, Dapeng and Yu, Zhengtao, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/10465638" target="_blank"><font color="#0000FF">Single-Image HDR Reconstruction Assisted Ghost Suppression and Detail Preservation Network for Multi-Exposure HDR Imaging</font></a>, 
+  <ud2>IEEE Transactions on Computational Imaging</ud2>, 2024.  
+  <a href="https://github.com/lhf12278/SAMHDR" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Li, Huafeng and Yuan, Ming and Li, Jinxing and Liu, Yu and Lu, Guangming and Xu, Yong and Yu, Zhengtao and Zhang, David, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/10461111" target="_blank"><font color="#0000FF">Focus Affinity Perception and Super-Resolution Embedding for Multifocus Image Fusion</font></a>, 
+  <ud2>IEEE Transactions on Neural Networks and Learning Systems</ud2>, 2024.
+</li>
+
+<li>Li, Huafeng and Hu, Qingsong and Hu, Zhanxuan, 
+  <a href="https://ojs.aaai.org/index.php/AAAI/article/view/28092" target="_blank"><font color="#0000FF">Catalyst for Clustering-Based Unsupervised Object Re-identification: Feature Calibration</font></a>, 
+  <ud2>Proceedings of the AAAI Conference on Artificial Intelligence</ud2>, vol. 38, no. 4, pp. 3091–3099, 2024.  
+  <a href="https://github.com/lhf12278/FCM-ReID" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Zhang, Yafei and Yang, Xuji and Li, Huafeng and Xie, Minghong and Yu, Zhengtao, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/10473165" target="_blank"><font color="#0000FF">DCPNet: A Dual-Task Collaborative Promotion Network for Pansharpening</font></a>, 
+  <ud2>IEEE Transactions on Geoscience and Remote Sensing</ud2>, vol. 62, pp. 1–16, 2024.
+</li>
+
+<li>Wang, Hongbin and Chen, Rui and Shu, Zhenqiu and Zhang, Yafei and Li, Huafeng, 
+  <a href="https://www.sciencedirect.com/science/article/abs/pii/S0925231223012365" target="_blank"><font color="#0000FF">Supervised adaptive similarity consistent latent representation hashing</font></a>, 
+  <ud2>Neurocomputing</ud2>, vol. 570, pp. 127113, 2024.
+</li>
+<li>Li, Rui and Liu, Yishu and Li, Huafeng and Li, Jinxing and Lu, Guangming, 
+  <a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681211" target="_blank"><font color="#0000FF">Prototype-Guided Dual-Transformer Reasoning for Video Individual Counting</font></a>, 
+  <ud2>Proceedings of the 32nd ACM International Conference on Multimedia</ud2>, pp. 10258–10267, 2024.
+</li>
+
+<li>万磊, 李华锋 and 张亚飞, 
+  <a href="https://www.jcad.cn/cn/article/id/01ea269a-2c53-4c9e-8e24-dca9ce886115" target="_blank"><font color="#0000FF">多模态特征融合和自蒸馏的红外-可见光行人重识别</font></a>, 
+  <ud2>计算机辅助设计与图形学学报</ud2>, 2024.
+</li>
+
+<li>毛彦嵋, 李华锋 and 张亚飞, 
+  面向跨区域场景的无监督域自适应行人重识别 (网络首发), 
+  <ud2>上海交通大学学报</ud2>, pp. 0, 2024.
+</li>
+
+<li>Zhang, Yafei and Zhou, Shen and Li, Huafeng, 
+  <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Depth_Information_Assisted_Collaborative_Mutual_Promotion_Network_for_Single_Image_CVPR_2024_paper.html" target="_blank"><font color="#0000FF">Depth Information Assisted Collaborative Mutual Promotion Network for Single Image Dehazing</font></a>, 
+  <ud2>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</ud2>, pp. 2846–2855, 2024.  
+  <a href="https://github.com/zhoushen1/DCMPNet" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Chen, Liping and Xie, Siqiang and Lopes, António M and Li, Huafeng and Bao, Xinyuan and Zhang, Chaolong and Li, Penghua, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S0360544223029912" target="_blank"><font color="#0000FF">A new SOH estimation method for Lithium-ion batteries based on model-data-fusion</font></a>, 
+  <ud2>Energy</ud2>, vol. 286, pp. 129597, 2024.
+</li>
+      </ul>
+  <hr />
+
+                
+<h4><b>2023:</b></h4>
+        <ul class="graid3-ul">
+  <div style="text-align: justify; display: block; margin-right: auto;">    
+
+<li>Li, Huafeng, Dan Wang, Yuxin Huang, Yafei Zhang, and Zhengtao Yu, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/10364841/" target="_blank"><font color="#0000FF">Generation and recombination for multifocus image fusion with free number of inputs</font></a>, 
+  <ud2>IEEE Transactions on Circuits and Systems for Video Technology</ud2>, 2023.
+  <a href="https://github.com/ChuhaoZhou99/SAADG_VVIReID" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Zhou, Chuhao, Jinxing Li, Huafeng Li, Guangming Lu, Yong Xu, and Min Zhang, 
+  <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3612479" target="_blank"><font color="#0000FF">Video-based visible-infrared person re-identification via style disturbance defense and dual interaction</font></a>, 
+  <ud2>Proceedings of the 31st ACM International Conference on Multimedia</ud2>, pp. 46-55, 2023.
+  <a href="https://github.com/ChuhaoZhou99/SAADG_VVIReID" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Kuang, Zhenyu, Chuchu He, Yue Huang, Xinghao Ding, and Huafeng Li, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/10260258" target="_blank"><font color="#0000FF">Joint Image and Feature Levels Disentanglement for Generalizable Vehicle Re-identification</font></a>, 
+  <ud2>IEEE Transactions on Intelligent Transportation Systems</ud2>, 2023.
+</li>
+
+<li>Li, Huafeng, Shedan Yang, Yafei Zhang, Dapeng Tao, and Zhengtao Yu, 
+  <a href="https://arxiv.org/pdf/2308.11994" target="_blank"><font color="#0000FF">Progressive Feature Mining and External Knowledge-Assisted Text-Pedestrian Image Retrieval</font></a>, 
+  <ud2>arXiv preprint</ud2>, 2023.
+</li>
+
+<li>Li, Huafeng, Yanmei Mao, Yafei Zhang, Guanqiu Qi, and Zhengtao Yu, 
+  <a href="https://arxiv.org/abs/2307.06533" target="_blank"><font color="#0000FF">Domain-adaptive person re-identification without cross-camera paired samples</font></a>, 
+  <ud2>arXiv preprint</ud2>, 2023.
+</li>
+
+<li>Li, Huafeng, Le Xu, Yafei Zhang, Dapeng Tao, and Zhengtao Yu, 
+  <a href="https://arxiv.org/abs/2307.03903" target="_blank"><font color="#0000FF">Adversarial Self-Attack Defense and Spatial-Temporal Relation Mining for Visible-Infrared Video Person Re-Identification</font></a>, 
+  <ud2>arXiv preprint</ud2>, 2023.
+  <a href="https://github.com/lhf12278/xxx" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Li, Huafeng, Junzhi Zhao, Jinxing Li, Zhengtao Yu, and Guangming Lu, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S1566253523000519" target="_blank"><font color="#0000FF">Feature dynamic alignment and refinement for infrared–visible image fusion: Translation robust fusion</font></a>, 
+  <ud2>Information Fusion</ud2>, vol. 95, pp. 26-41, 2023.
+  <a href="https://github.com/lhf12278/RFVIF" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Li, Shuang, Fan Li, Jinxing Li, Huafeng Li, Bob Zhang, Dapeng Tao, and Xinbo Gao, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/10148098/" target="_blank"><font color="#0000FF">Logical relation inference and multiview information interaction for domain adaptation person re-identification</font></a>, 
+  <ud2>IEEE Transactions on Neural Networks and Learning Systems</ud2>, 2023.
+  <a href="https://jeit.ac.cn/article/doi/10.11999/JEIT220444?pageType=en" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Minghong, X. I. E., K. A. N. G. Bin, L. I. Huafeng, and Z. H. A. N. G. Yafei, 
+  <a href="https://jeit.ac.cn/article/doi/10.11999/JEIT220444?pageType=en" target="_blank"><font color="#0000FF">Crowded Pedestrian Detection Method Combining Anchor Free and Anchor Base Algorithm</font></a>, 
+  <ud2>电子与信息学报</ud2>, vol. 45, no. 5, pp. 1833-1841, 2023.
+</li>
+
+<li>Jiang, Bo, Jinxing Li, Huafeng Li, Ruxian Li, David Zhang, and Guangming Lu, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S1566253522002640" target="_blank"><font color="#0000FF">Enhanced frequency fusion network with dynamic hash attention for image denoising</font></a>, 
+  <ud2>Information Fusion</ud2>, vol. 92, pp. 420-434, 2023.
+</li>
+
+<li>Tu, Yunbin, Chang Zhou, Junjun Guo, Huafeng Li, Shengxiang Gao, and Zhengtao Yu, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S0031320322006835" target="_blank"><font color="#0000FF">Relation-aware attention for video captioning via graph learning</font></a>, 
+  <ud2>Pattern Recognition</ud2>, vol. 136, 2023.
+</li>
+
+<li>Wang, K., Lu, W., Liu, P., Yao, J., & Li, H., 
+  <a href="https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/sil2.12182" target="_blank"><font color="#0000FF">Multi‐stage attention network for monaural speech enhancement</font></a>, 
+  <ud2>IET Signal Processing</ud2>, vol. 17, no. 3, e12182, 2023.
+  <a href="http://www.msp‐lab.cn:1436/msp/MSANet" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Li, Huafeng, Minghui Liu, Zhanxuan Hu, Feiping Nie, and Zhengtao Yu, 
+  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10047982" target="_blank"><font color="#0000FF">Intermediary-Guided Bidirectional Spatial–Temporal Aggregation Network for Video-Based Visible-Infrared Person Re-Identification</font></a>, 
+  <ud2>IEEE Transactions on Circuits and Systems for Video Technology</ud2>, vol. 33, no. 9, pp. 4962-4972, 2023.
+  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10047982" target="_blank"><font color="#FF5151">[Code]</font></a>
+</li>
+
+<li>Liu, Minghui, Yafei Zhang, and Huafeng Li, 
+  <a href="https://www.mdpi.com/2227-7390/11/3/654" target="_blank"><font color="#0000FF">Survey of Cross-Modal Person Re-Identification from a Mathematical Perspective</font></a>, 
+  <ud2>Mathematics</ud2>, vol. 11, no. 3, pp. 654, 2023.
+</li>
+
+<li>Jirui, Gao, Li Huafeng, and Zhang Yafei, 
+  Dual attention-guided detail and structure information fusion network for image dehazing, 
+  <ud2>Acta Electronica Sinica</ud2>, vol. 51, no. 1, pp. 160-171, 2023.
+</li>
+
+      
+      </ul>
+  <hr />
+            
+            
+            
+            
+    
+<h4><b>2022:</b></h4>
+        <ul class="graid3-ul">
+  <div style="text-align: justify; display: block; margin-right: auto;">
+
+<li> 石林波, 李华锋, 张亚飞, and 谢明鸿, "模态不变性特征学习和一致性细粒度信息挖掘的跨模态行人重识别", 模式识别与人工智能 (2022): 1.</li>
+
+<li> Wang, Shujuan, Run Liu, Huafeng Li, Guanqiu Qi, and Zhengtao Yu, 
+  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9933492" target="_blank"><font color="#0000FF">"Occluded person re-identification via defending against attacks from obstacles"</font></a>, 
+  <ud2>IEEE Transactions on Information Forensics and Security</ud2>, vol. 18, pp. 147-161, 2022.</li>
+
+<li> Zhang, Yafei, Yongzeng Wang, Huafeng Li, and Shuang Li, 
+  <a href="https://dl.acm.org/doi/abs/10.1145/3503161.3548224" target="_blank"><font color="#0000FF">"Cross-compatible embedding and semantic consistent feature construction for sketch re-identification"</font></a>, 
+  <ud2>Proceedings of the 30th ACM International Conference on Multimedia</ud2>, pp. 3347-3355, 2022. 
+  <a href="https://github.com/lhf12278/CCSC" target="_blank"><font color="#FF5151">[Code]</font></a></li>
+
+<li> Liu, Yu, Lei Wang, Huafeng Li, and Xun Chen, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S1566253522000513" target="_blank"><font color="#0000FF">"Multi-focus image fusion with deep residual learning and focus property detection"</font></a>, 
+  <ud2>Information Fusion</ud2>, vol. 86, pp. 1-16, 2022.</li>
+
+<li> Wang, Yiming, Guanqiu Qi, Shuang Li, Yi Chai, and Huafeng Li, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/9895288/" target="_blank"><font color="#0000FF">"Body part-level domain alignment for domain-adaptive person re-identification with transformer framework"</font></a>, 
+  <ud2>IEEE Transactions on Information Forensics and Security</ud2>, vol. 17, pp. 3321-3334, 2022. 
+  <a href="https://github.com/lhf12278/BPDA" target="_blank"><font color="#FF5151">[Code]</font></a></li>
+
+<li> Li, Huafeng, Jirui Gao, Yafei Zhang, Minghong Xie, and Zhengtao Yu, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S0950705122006566" target="_blank"><font color="#0000FF">"Haze transfer and feature aggregation network for real-world single image dehazing"</font></a>, 
+  <ud2>Knowledge-Based Systems</ud2>, vol. 251, pp. 109309, 2022. 
+  <a href="https://github.com/lhf12278/HTFA-Net" target="_blank"><font color="#FF5151">[Code]</font></a></li>
+
+<li> Li, Huafeng, Kaixiong Xu, Jinxing Li, and Zhengtao Yu, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S0950705122006591" target="_blank"><font color="#0000FF">"Dual-stream reciprocal disentanglement learning for domain adaptation person re-identification"</font></a>, 
+  <ud2>Knowledge-Based Systems</ud2>, vol. 251, pp. 109315, 2022. 
+  <a href="https://github.com/lhf12278/DRDL" target="_blank"><font color="#FF5151">[Code]</font></a></li>
+
+<li> Li, Shuang, Fan Li, Kunpeng Wang, Guanqiu Qi, and Huafeng Li, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S1569190X22000594" target="_blank"><font color="#0000FF">"Mutual prediction learning and mixed viewpoints for unsupervised-domain adaptation person re-identification on blockchain"</font></a>, 
+  <ud2>Simulation Modelling Practice and Theory</ud2>, vol. 119, pp. 102568, 2022. 
+  <a href="https://github.com/lhf12278/MPL-MV" target="_blank"><font color="#FF5151">[Code]</font></a></li>
+
+<li> Lin, Xinyu, Huafeng Li, and Qing Cai, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S092523122200741X" target="_blank"><font color="#0000FF">"Hierarchical complementary residual attention learning for defocus blur detection"</font></a>, 
+  <ud2>Neurocomputing</ud2>, vol. 501, pp. 88-101, 2022.</li>
+
+<li> Wang, Shujuan, Bochun Huang, Huafeng Li, Guanqiu Qi, Dapeng Tao, and Zhengtao Yu, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S0020025522005096" target="_blank"><font color="#0000FF">"Key point-aware occlusion suppression and semantic alignment for occluded person re-identification"</font></a>, 
+  <ud2>Information Sciences</ud2>, vol. 606, pp. 669-687, 2022. 
+  <a href="https://github.com/huangdaichui/occ_reid" target="_blank"><font color="#FF5151">[Code]</font></a></li>
+
+<li> 李爽, 李华锋, and 李凡, 
+  <a href="https://www.researching.cn/ArticlePdf/m00002/2022/59/10/1010010.pdf" target="_blank"><font color="#0000FF">"基于互预测学习的细粒度跨模态行人重识别"</font></a>, 
+  <ud2>Laser & Optoelectronics Progress</ud2>, vol. 59, no. 10, pp. 1010010-1010010, 2022.</li>
+
+<li> 肖万新, 李华锋, 张亚飞, 谢明鸿, and 李凡, 
+  <a href="https://www.researching.cn/ArticlePdf/m00002/2022/59/6/0617029.pdf" target="_blank"><font color="#0000FF">"多尺度特征学习和边缘增强的医学图像融合"</font></a>, 
+  <ud2>Laser & Optoelectronics Progress</ud2>, vol. 59, no. 6, pp. 0617029-0617029, 2022.</li>
+
+<li> Cai, Qing, Jinxing Li, Huafeng Li, Yee-Hong Yang, Feng Wu, and David Zhang, 
+  <a href="http://openaccess.thecvf.com/content/CVPR2022/html/Lin_Learning_Modal-Invariant_and_Temporal-Memory_for_Video-Based_Visible-Infrared_Person_Re-Identification_CVPR_2022_paper.html" target="_blank"><font color="#0000FF">"TDPN: Texture and detail-preserving network for single image super-resolution"</font></a>, 
+  <ud2>IEEE Transactions on Image Processing</ud2>, vol. 31, pp. 2375-2389, 2022. 
+  <a href="https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/cvi2.12068" target="_blank"><font color="#FF5151">[Code]</font></a></li>
+
+<li> Wang, Meng, Zhengbing Guo, and Huafeng Li, 
+  <a href="https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/cvi2.12068" target="_blank"><font color="#0000FF">"A dynamic routing CapsNet based on increment prototype clustering for overcoming catastrophic forgetting"</font></a>, 
+  <ud2>IET Computer Vision</ud2>, vol. 16, no. 1, pp. 83-97, 2022.</li>
+
+<li> Lin, Xinyu, Jinxing Li, Zeyu Ma, Huafeng Li, Shuang Li, Kaixiong Xu, Guangming Lu, and David Zhang, 
+  <a href="http://openaccess.thecvf.com/content/CVPR2022/html/Lin_Learning_Modal-Invariant_and_Temporal-Memory_for_Video-Based_Visible-Infrared_Person_Re-Identification_CVPR_2022_paper.html" target="_blank"><font color="#0000FF">"Learning modal-invariant and temporal-memory for video-based visible-infrared person re-identification"</font></a>, 
+  <ud2>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</ud2>, pp. 20973-20982, 2022.</li>
+     
+      </ul>
+  <hr />
+    
+    
+    
+<h4><b>2021:</b></h4>
+        <ul class="graid3-ul">
+  <div style="text-align: justify; display: block; margin-right: auto;">
+ 
+  
+<li> 李玲莉, 谢明鸿, 李凡, 张亚飞, 李华锋, and 谭婷婷, 
+  <a href="http://qks.cqu.edu.cn/cqdxzren/article/abstract/20211108?st=article_issue" target="_blank">
+    <font color="#0000FF">Unsupervised domain adaptive person re-identification guided by low-rank priori</font>
+  </a>, 
+  <ud2>重庆大学学报</ud2>, vol. 44, no. 11, pp. 57-70, 2021.
+</li>
+
+<li> Li, Huafeng, Neng Dong, Zhengtao Yu, Dapeng Tao, and Guanqiu Qi, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/9495801/" target="_blank">
+    <font color="#0000FF">Triple adversarial learning and multi-view imaginative reasoning for unsupervised domain adaptation person re-identification</font>
+  </a>, 
+  <ud2>IEEE Transactions on Circuits and Systems for Video Technology</ud2>, vol. 32, no. 5, pp. 2814-2830, 2021.
+  <a href="https://github.com/lhf12278/TALM-IRM" target="_blank">
+    <font color="#FF5151">[Code]</font>
+  </a>
+</li>
+
+<li> Pang, Jian, Dacheng Zhang, Huafeng Li, Weifeng Liu, and Zhengtao Yu, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/9428462/" target="_blank">
+    <font color="#0000FF">Hazy re-ID: An interference suppression model for domain adaptation person re-identification under inclement weather condition</font>
+  </a>, 
+  <ud2>2021 IEEE International Conference on Multimedia and Expo (ICME)</ud2>, pp. 1-6, 2021.
+  <a href="https://github.com/pangjian123/ISM-ReID" target="_blank">
+    <font color="#FF5151">[Code]</font>
+  </a>
+</li>
+
+<li> Li, Huafeng, Jian Pang, Dapeng Tao, and Zhengtao Yu, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S0020025521000359" target="_blank">
+    <font color="#0000FF">Cross adversarial consistency self-prediction learning for unsupervised domain adaptation person re-identification</font>
+  </a>, 
+  <ud2>Information Sciences</ud2>, vol. 559, pp. 46-60, 2021.
+  <a href="https://github.com/PangJian123/CAC-CSP" target="_blank">
+    <font color="#FF5151">[Code]</font>
+  </a>
+</li>
+
+<li> Li, Huafeng, Yueliang Cen, Yu Liu, Xun Chen, and Zhengtao Yu, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/9394791/" target="_blank">
+    <font color="#0000FF">Different input resolutions and arbitrary output resolution: A meta learning-based deep framework for infrared and visible image fusion</font>
+  </a>, 
+  <ud2>IEEE Transactions on Image Processing</ud2>, vol. 30, pp. 4070-4083, 2021.
+  <a href="https://github.com/yuliu316316/MetaLearning-Fusion" target="_blank">
+    <font color="#FF5151">[Code]</font>
+  </a>
+</li>
+
+<li> Li, Huafeng, Moyuan Yang, and Zhengtao Yu, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S0925231220314314" target="_blank">
+    <font color="#0000FF">Joint image fusion and super-resolution for enhanced visualization via semi-coupled discriminative dictionary learning and advantage embedding</font>
+  </a>, 
+  <ud2>Neurocomputing</ud2>, vol. 422, pp. 62-84, 2021.
+</li>
+     
+      </ul>
+  <hr />
+    
+    
+<h4><b>2020:</b></h4>
+        <ul class="graid3-ul">
+<div style="text-align: justify; display: block; margin-right: auto;">  
+
+<li> Li, Huafeng, Yiwen Chen, Dapeng Tao, Zhengtao Yu, and Guanqiu Qi, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/9252161/" target="_blank"><font color="#0000FF">Attribute-aligned domain-invariant feature learning for unsupervised domain adaptation person re-identification</font></a>, 
+  <ud2>IEEE Transactions on Information Forensics and Security</ud2>, vol. 16, pp. 1480-1494, 2020.
+</li>
+
+
+<li> Li, Huafeng, Zhenyu Kuang, Zhengtao Yu, and Jiebo Luo, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S003132032030217X" target="_blank"><font color="#0000FF">Structure alignment of attributes and visual features for cross-dataset person re-identification</font></a>, 
+  <ud2>Pattern Recognition</ud2>, vol. 106, pp. 107414, 2020.
+</li>
+
+
+<li> Li, Huafeng, Jiajia Xu, Zhengtao Yu, and Jiebo Luo, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/9119202/" target="_blank"><font color="#0000FF">Jointly learning commonality and specificity dictionaries for person re-identification</font></a>, 
+  <ud2>IEEE Transactions on Image Processing</ud2>, vol. 29, pp. 7345-7358, 2020.
+</li>
+
+
+<li> Li, Huafeng, Xiaoge He, Zhengtao Yu, and Jiebo Luo, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S0020025520301833" target="_blank"><font color="#0000FF">Noise-robust image fusion with low-rank sparse decomposition guided by external patch prior</font></a>, 
+  <ud2>Information Sciences</ud2>, vol. 523, pp. 14-37, 2020.
+</li>
+
+
+<li> Li, Huafeng, Weiyan Zhou, Zhengtao Yu, Biao Yang, and Huaiping Jin, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S0925231219315504" target="_blank"><font color="#0000FF">Person re-identification with dictionary learning regularized by stretching regularization and label consistency constraint</font></a>, 
+  <ud2>Neurocomputing</ud2>, vol. 379, pp. 356-369, 2020.
+</li>
+
+
+<li> Liu, Shuping, Yantuan Xian, Huafeng Li, and Zhengtao Yu, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/7833268/" target="_blank"><font color="#0000FF">Text detection in natural scene images using morphological component analysis and Laplacian dictionary</font></a>, 
+  <ud2>IEEE/CAA Journal of Automatica Sinica</ud2>, vol. 7, no. 1, pp. 214-222, 2017.
+</li>
+
+
+<li> 杨默远, 李凡, 谢明鸿, 张亚飞, and 李华锋, 
+  <font color="#000000">卷积稀疏表示图像融合与超分辨率联合实现</font>, 
+  <ud2>光学技术</ud2>, vol. 46, no. 2, pp. 236, 2020.
+</li>
+
+
+<li> Zhao, Dandan, Hongbin Wang, Hongpeng Yin, Zhengtao Yu, and Huafeng Li, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S0165168419303317" target="_blank"><font color="#0000FF">Person re-identification by integrating metric learning and support vector machine</font></a>, 
+  <ud2>Signal Processing</ud2>, vol. 166, pp. 107277, 2020.
+</li>
+
+
+  
+    </ul>
+            <hr />
+                
+<h4><b>2019:</b></h4>
+<ul class="graid3-ul">
+  <div style="text-align: justify; display: block; margin-right: auto;">
+<li> Wang, Meng, Shengyu Hou, Huafeng Li, and Fan Li, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S104732031930269X" target="_blank"><font color="#0000FF">Generative image deblurring based on multi-scaled residual adversary network driven by composed prior-posterior loss</font></a>, 
+  <ud2>Journal of Visual Communication and Image Representation</ud2>, vol. 65, pp. 102648, 2019.
+</li>
+
+<li> Li, Huafeng, Shuanglin Yan, Zhengtao Yu, and Dapeng Tao, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/8894380" target="_blank"><font color="#0000FF">Attribute-identity embedding and self-supervised learning for scalable person re-identification</font></a>, 
+  <ud2>IEEE Transactions on Circuits and Systems for Video Technology</ud2>, vol. 30, no. 10, pp. 3472-3485, 2019.
+</li>
+
+<li> Li, Huafeng, Jiajia Xu, Jinting Zhu, Dapeng Tao, and Zhengtao Yu, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S0020025519305845" target="_blank"><font color="#0000FF">Top distance regularized projection and dictionary learning for person re-identification</font></a>, 
+  <ud2>Information Sciences</ud2>, vol. 502, pp. 472-491, 2019.
+</li>
+
+<li> Li, Huafeng, Yitang Wang, Zhao Yang, Ruxin Wang, Xiang Li, and Dapeng Tao, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/8701665/" target="_blank"><font color="#0000FF">Discriminative dictionary learning-based multiple component decomposition for detail-preserving noisy image fusion</font></a>, 
+  <ud2>IEEE Transactions on Instrumentation and Measurement</ud2>, vol. 69, no. 4, pp. 1082-1102, 2019.
+</li>
+      
+      
+      
+</ul>
+    <hr />
+  
+<h4><b>2018:</b></h4>
+        <ul class="graid3-ul">
+  <div style="text-align: justify; display: block; margin-right: auto;">
+<li> Li, Huafeng, Jinting Zhu, and Dapeng Tao, 
+  <a href="https://ieeexplore.ieee.org/abstract/document/8410867/" target="_blank"><font color="#0000FF">Asymmetric projection and dictionary learning with listwise and identity consistency constraints for person re-identification</font></a>, 
+  <ud2>IEEE Access</ud2>, vol. 6, pp. 37977-37990, 2018.
+</li>
+
+<li> Li, Huafeng, Xiaoge He, Dapeng Tao, Yuanyan Tang, and Ruxin Wang, 
+  <a href="https://www.sciencedirect.com/science/article/pii/S0031320318300529" target="_blank"><font color="#0000FF">Joint medical image fusion, denoising and enhancement via discriminative low-rank sparse dictionaries learning</font></a>, 
+  <ud2>Pattern Recognition</ud2>, vol. 79, pp. 130-146, 2018.
+</li>
+
+<li> 邓志华, and 李华锋, 
+  <a href="https://www.opticsjournal.net/Articles/OJ6f0ac6403f57eaf/FullText" target="_blank"><font color="#0000FF">低秩稀疏分解与显著性度量的医学图像融合</font></a>, 
+  <ud2>Optical Technique</ud2>, vol. 44, no. 4, pp. 461-468, 2018.
+</li>
+
+  </ul>
+  <hr />
+            
+<!-- <h4><b>2017:</b></h4>
+        <ul class="graid3-ul">
+<div style="text-align: justify; display: block; margin-right: auto;">  
+
+
+  </ul>
+            <hr />
+            
+<h4><b>2016:</b></h4>
+        <ul class="graid3-ul">
+<div style="text-align: justify; display: block; margin-right: auto;">
+    
+
+</ul>
+            <hr /> -->
+<!--
+<h4><b>2015:</b></h4>
+        <ul class="graid3-ul">
+ <div style="text-align: justify; display: block; margin-right: auto;">
+     
+<li> Ping Han, <strong>Runmin Cong</strong>, and Zaiji Zhang, 
+  <font color="#0000FF">Change detection algorithm of polarimetric SAR image based on polarization state extracting</font>,
+  <ud2>Systems Engineering and Electronics</ud2>, vol. 37, no. 7, pp. 1526-1530, 2015. (in Chinese, EI)<br></li>
+  </ul>
+                <hr />
+-->
+            
+<h4><b>授权中国发明专利:</b></h4>
+<ul class="graid3-ul">
+<div style="text-align: justify; display: block; margin-right: auto;">
+
+<li>一种基于形态成分分析与自适应字典学习的场景图像文字检测的方法，专利号：ZL 201610507380.7，申请日：无，授权公告日：2019.07.05</li>  
+<li>一种基于判别字典学习与稀疏表示的场景图片文字检测的方法，专利号：ZL 201610505754.1，申请日：无，授权公告日：2019.07.05</li>  
+<li>一种基于差值图对多聚焦度图像融合优化的方法，专利号：ZL 201610210196.6，申请日：无，授权公告日：2018.09.28</li>  
+<li>一种基于多尺度图像分析和块一致性验证的多聚焦图像融合方法，专利号：ZL 201610190129.2，申请日：无，授权公告日：2018.08.31</li>  
+<li>基于NSCT域底层视觉特征的可见光和红外图像融合算法，专利号：ZL 201610044134.2，申请日：无，授权公告日：2018.05.25</li>  
+<li>一种基于变分与分数阶微分的图像融合与超分辨率实现方法，专利号：ZL 201410088525.5，申请日：无，授权公告日：2016.09.07</li>  
+<li>一种基于投影矩阵约束结合判别字典学习的行人再识别方法，专利号：ZL 201810179350.7，申请日：无，授权公告日：2020.11.07</li>  
+<li>基于判别字典学习和形态成分分解的多源图像融合方法，专利号：ZL 201810546687.7，申请日：无，授权公告日：2021.11.23</li>  
+<li>基于低秩先验引导的域不变信息分离的行人重识别方法，专利号：ZL 202010424961.0，申请日：无，授权公告日：2022.06.07</li>  
+<li>基于判别字典学习的图像融合与超分辨率联合实现方法，专利号：ZL 202010425926.0，申请日：无，授权公告日：2022.06.28</li>  
+<li>基于区域信息增强与块自注意力的图像超分与融合方法，专利号：ZL 202010506835.X，申请日：无，授权公告日：2022.08.30</li>  
+<li>一种利用姿势不变和图结构对齐的跨域行人重识别方法，专利号：ZL 202010434344.9，申请日：无，授权公告日：2022.08.30</li>  
+<li>基于低秩稀疏分解和PCNN的图像融合方法，专利号：ZL 201810629338.1，申请日：无，授权公告日：2022.08.30</li>  
+<li>基于Transformer的关键特征增强胃癌图像识别方法，专利号：ZL 202111457189.3，申请日：无，授权公告日：2022.11.29</li>  
+<li>基于字典学习的多源受损图像融合与恢复联合实现方法，专利号：ZL 202011436276.6，申请日：无，授权公告日：2022.12.09</li>  
+<li>一种基于雾迁移和特征聚合的真实场景下有雾图像去雾方法，专利号：ZL 202111457187.4，申请日：无，授权公告日：2022.12.13</li>  
+<li>一种基于图卷积的Transformer胃癌癌变区域图像分割方法，专利号：ZL 202111457186.X，申请日：无，授权公告日：2022.12.30</li>  
+<li>基于多成分分析和残差补偿的图像融合与超分辨率重建联合实现方法，专利号：ZL 201910868215.8，申请日：无，授权公告日：2023.03.07</li>
+
+
+  </ul> 
+    <hr />
+            
+<ul class="graid3-ul">
+        <div style="text-align: justify; display: block; margin-right: auto;">
+    Here are the Impact Factors (IF) of selected journals of my publications. <br>
+        
+    - IEEE Transactions on Neural Networks and Learning Systems (TNNLS): 14.255<br>
+    - IEEE Transactions on Image Processing (TIP): 10.856<br>
+    - IEEE Transactions on Industrial Informatics (TII): 10.215<br>
+    - IEEE Transactions on Geoscience and Remote Sensing (TGRS): 7.255<br>
+    - IEEE Transactions on Information Forensics and Security (TIFS): 7.231<br>
+    - IEEE Transactions on Intelligent Transportation Systems (TITS): 6.319<br>
+    - IEEE Transactions on Circuits and Systems for Video Technology (TCSVT): 5.858<br>
+    - IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI): 4.981<br>
+    - IEEE Transactions on Computational Imaging (TCI): 4.694<br>
+    - IEEE Transactions on Instrumentation and Measurement (TIM): 4.016<br>
+    
+
+    - Information Fusion: 17.564<br>
+    - International Journal of Computer Vision (IJCV): 14.980<br>
+    - Neural Networks (NN): 8.050<br>
+    - Knowledge-Based Systems (KBS): 8.038<br>
+    - Pattern Recognition (PR): 7.196<br>
+    - Expert Systems with Applications (ESWA): 8.665<br>
+    - Biomedical Signal Processing and Control (BSPC): 4.614<br>
+    - Simulation Modelling Practice and Theory (SMPAT): 3.357<br>
+    - Mathematics: 2.592<br>
+    - IET Signal Processing (IETSP): 2.000<br>
+    
+
+    - Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR): ~51.98<br>
+    - Proceedings of the AAAI Conference on Artificial Intelligence (AAAI): ~4.0<br>
+    - Proceedings of the ACM International Conference on Multimedia (ACMMM): ~3.5<br>
+    
+    
+            
+            
+    </div>          
+        </div>  
+    </div>
+    
+        <script type="text/javascript" src="./files/jquery.min.js.下载"></script>
+        <script type="text/javascript" src="./files/bootstrap.js.下载"></script>
+        <script type="text/javascript" src="./files/jquery.banner.js.下载"></script>
+        <script type="text/javascript" src="./files/jquery.prettyPhoto.js.下载"></script>     
+        <script type="text/javascript" src="./files/jquery.isotope.js.下载"></script> 
+        <script type="text/javascript" src="./files/main.js.下载"></script>               
+    
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./files/jquery.min.js"></script>
+    <script type="text/javascript" src="./files/bootstrap.js"></script>
+    <script type="text/javascript" src="./files/jquery.banner.js"></script>
+    <script type="text/javascript" src="./files/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="./files/jquery.isotope.js"></script>
+    <script type="text/javascript" src="./files/main.js"></script>
+</body>
+</html>

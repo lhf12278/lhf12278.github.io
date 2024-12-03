@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="csstransforms csstransforms3d csstransitions">
+<!-- saved from url=https://rmcong.github.io/index.html -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Huafeng Li</title>
+    <link href="./files/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./files/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./files/prettyPhoto.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./files/css" rel="stylesheet" type="text/css">
+    <style>
+        /* 重置浏览器默认边距 */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .people-photo {
+            border-radius: 50%;
+            height: 200px !important;
+            width: 200px !important;
+            box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 5px;
+        }
+        .thumbnail-mvp {
+            padding: 4px;
+            margin-bottom: 20px;
+            line-height: 1.42857143;
+            text-align: center;
+        }
+        .thumbnail-people {
+            padding: 4px;
+            margin-bottom: 5px;
+            line-height: 1.42857143;
+            text-align: center;
+        }
+        .container-fluid {
+            font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        .academicegree {
+            font-size: 2.28rem;
+            margin: 1.14rem 0 0.912rem 0;
+        }
+        .row:nth-child(2n) {
+            background: whitesmoke;
+        }
+        .row {
+            margin-bottom: 50px;
+        }
+        .people-topic {
+            font-style: italic;
+            color: #1a237e;
+        }
+        /* 侧边栏样式 */
+        .sidebar {
+            position: fixed;
+            top: 72px; /* 调整此值以确保侧边栏在导航栏下方 */
+            left: 0;
+            width: 300px; /* 将侧边栏宽度固定为400像素 */
+            padding: 0px;
+            background-color: #f5f5f5;
+            height: calc(100% - 80px); /* 高度减去导航栏高度 */
+            overflow-y: auto;
+        }
+        /* 内容区域样式 */
+        .main-content {
+            margin-left: 300px; /* 与侧边栏宽度一致 */
+            padding: 20px;
+            background-color: #ffffff; /* 将背景色改为 #ffffff */
+        }
+        /* 响应式布局 */
+        @media (max-width: 767px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                top: 0;
+            }
+            .main-content {
+                margin-left: 0;
+            }
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .content {
+            margin-top: 80px; /* 与导航栏高度一致 */
+        }
+
+	.widget-container {
+	    width: 300px;
+	    height: 350px;
+	    margin: 0 auto; /* 水平居中 */
+	    display: flex; /* 使用 Flexbox 布局 */
+	    justify-content: center; /* 水平居中 */
+	    align-items: center; /* 垂直居中 */
+	    overflow: hidden; /* 防止超出部分显示 */
+	    position: relative; /* 防止子元素位置异常 */
+	}
+
+	#clstr_globe {
+	    width: 300px;
+	    height: 300px;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	}
+
+    </style>
+</head>
+<body>
+    <!---start-header--->
+    <div class="header">
+        <div class="wrap">
+            <!---start-logo--->
+            <div class="logo">
+                <a href="./index.html">Huafeng Li</a>
+            </div>
+            <!---End-logo--->
+            <!---start-top-nav--->
+            <div class="top-nav">
+                <ul>
+                    <li id="Home" onclick="func('Me')"><a href="./index.html" class="scroll">Home</a></li>
+                    <li id="Profile" onclick="func('Profile')"><a href="./Profile.html" class="scroll">Profile</a></li>
+                    <li id="Publications" onclick="func('Publications')"><a href="./Publication.html" class="scroll">Publications</a></li>
+                    <li id="MVPLab" onclick="func('MVP Lab')"><a href="./CVIP.html" class="scroll">CVIP Group</a></li>
+                    <!-- <li id="Profile-chinese" onclick="func('Profile-chinese')"><a href="./Profile-chinese.html" class="scroll">中文简介</a></li> -->
+                    <li id="Contact" onclick="func('Contact')"><a href="./Contact.html" class="scroll">Contact</a></li>
+                </ul>
+            </div>
+            <div class="clear"> </div>
+            <!---End-top-nav--->
+         </div>
+    </div>
+
+    <script> 
+    var lastname = 'Me';
+    function func(name){
+        var div = document.getElementById(name); 
+        div.className = 'active'; 
+        div = document.getElementById(lastname); 
+        div.className = ''; 
+        lastname = name;
+    }
+    function coming_soon()
+    {
+        alert("Coming soon.");
+    }
+    </script> 
+
+    <!---End-header--->
+    <div class="content">
+        <div class="container-fluid">
+            <!-- 侧边栏 -->
+            <div class="sidebar">
+                <!-- 侧边栏内容 -->
+                <br>
+                <br>
+                <br>
+                <div class="thumbnail-people">
+                    <a href="#">
+                        <img src="./sub_img/touxiang.png" class="people-photo">
+                    </a>
+                </div>
+                <br>
+                <ul style="text-align: center; list-style: none; padding: 0;">
+                    <li><strong>Huafeng Li</strong></li><br>
+                    <li>Professor@Kust</li><br>
+                    <li>Kunming Yunnan China</li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <ul style="text-align: center; list-style: none; padding: 0;">
+                    
+                    <li><a href="mailto:hfchina99@163.com">Email</a></li><br>
+                    <li><a href="https://github.com/lhf12278">Github</a></li><br>
+                    <li><a href="https://scholar.google.com/citations?user=njjX8D0AAAAJ&hl=en&oi=ao">Google Scholar</a></li><br>
+
+                </ul>
+            </div>
+            <!-- 主内容区域 -->
+            <div class="main-content">
+                <div class="grid1" id="me">
+                    <!-- <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./sub_img/touxiang.png" class="people-photo">
+                        </a>
+                    </div> -->
+                     
+                    <strong></strong>
+                    <div style="text-align: justify; display: block; margin: 50px auto; max-width: 1500px;">
+                        <p style="font-size: 40px;"><strong>Biography</strong></p><br>
+                        <p style="font-size: 32px;">Huafeng Li (李华锋)</strong></p>
+                        <p><strong>Huafeng Li</strong>, a Professor with the School of Faculty of Information Engineering and Automation, Kunming University of Science and Technology (KUST), Kunming, China. Dr. Li is the director of Computer Vision and Image Processing Group (CVIP Group), which is affiliated to the Key Laboratory of Artificial Intelligence in Yunnan Province.
+                          Dr. Li is the director of Computer Vision and Image Processing Group (CVIP Group), which is affiliated to the Key Laboratory of Artificial Intelligence in Yunnan Province. 
+                          He received the Ph.D. degree in Control Theory and Control Engineering from Chongqing University, Chongqing, China, in December 2012. 
+                          His current research interests include Computer Vision, Image Registration and Fusion, Multimedia Information Processing and Retrieval, Medical Image Processing and Segmentation, Visual grounding, Person Re-identification, Remote Sensing Image Interpretation. 
+                          Dr. Li was the World’s Top 2% Scientists (2020, 2021, 2024), Xingdian Elite Youth Top Notch Talents of Yunnan Province, the Young Editor of the Journal of Chongqing University. 
+                          Currently, he has published over 60 papers in <strong>CVPR</strong>, <strong>AAAI</strong>, <strong>ACMMM</strong>, <strong>ICME</strong>, <strong>IJCV</strong>, <strong>IEEE TIP</strong>, <strong>IEEE TIFS</strong>, <strong>IEEE TNNLS</strong>, <strong>IEEE TMM</strong>, <strong>IEEE TII</strong> , <strong>IEEE TCSVT</strong>, <strong>IEEE TGRS</strong>, <strong>IEEE TCI</strong>, <strong>IEEE TETCI</strong>, <strong>IEEE TIM</strong>, <strong>IEEE TITS</strong>, <strong>IEEE/CAA JAS</strong>, <strong>PR</strong>, <strong>INS</strong>, <strong>INFFUS</strong>, <strong>NeuNet</strong>, <strong>KBS</strong>, <strong>ESWA</strong>, etc. 
+                          He has served for over 30 journals and conferences as reviewer or PC member, including <strong>CVPR</strong>, <strong>ECCV</strong>, <strong>AAAI</strong>, <strong>ACMMM</strong>, <strong>PRCV</strong>, <strong>WACV</strong>, <strong>IJCV</strong>, <strong>IEEE TIP</strong>, <strong>IEEE TIFS</strong>, <strong>IEEE TNNLS</strong>, <strong>IEEE TCYB</strong>, <strong>IEEE TIM</strong>, <strong>IEEE/CAA JAS</strong>, <strong>IEEE TCSVT</strong>, <strong>IEEE TETCI</strong>, <strong>IEEE TMM</strong>, <strong>INFFUS</strong>, <strong>NeuNet</strong>, <strong>KBS</strong>, <strong>ESWA</strong>, etc.
+                        </p>
+                    </div>
+                    <div class="grid3" id="experience" style="margin: 50px auto; max-width: 1500px;">
+                        <div class="grid3-header" style="margin: 50px auto; max-width: 100%;">
+                            <h3 align='left'>Recent News</h3>
+                        </div>
+                        <div class="grid3-content" style="align:left;width:100%">
+				<div class="grid3-content">
+                                <ul class="graid3-ul" style="list-style-type:disc; height: 400px;overflow-y: auto;">
+                                    <div style="text-align: justify; display: block; margin-right: auto;">
+                                        <li><img src="./sub_img/news2.gif" width="12%" style="background: none; vertical-align: text-bottom; border-radius: 0; padding: 0;">&nbsp;2024/11 -- One paper has been accepted by <strong>IEEE Transactions on Instrumentation and Measurement</strong> (JCR Q2).</li>
+                                        <li><img src="./sub_img/news2.gif" width="12%" style="background: none; vertical-align: text-bottom; border-radius: 0; padding: 0;">&nbsp;2024/10 -- One paper has been accepted by <strong> IEEE Transactions on Emerging Topics in Computational Intelligence</strong> (JCR Q2).</li>
+                                        <li><img src="./sub_img/news2.gif" width="12%" style="background: none; vertical-align: text-bottom; border-radius: 0; padding: 0;">&nbsp;2024/09 -- One paper has been accepted by <strong>Information Fusion</strong>(JCR Q1， CCF-A).</li>
+                                        <li><img src="./sub_img/news2.gif" width="12%" style="background: none; vertical-align: text-bottom; border-radius: 0; padding: 0;">&nbsp;2024/04 -- One paper has been accepted by <strong>IEEE/CVF Conference on Computer Vision and Pattern Recognition</strong> (JCR Q1、CCF A).</li>
+                                        <li><img src="./sub_img/news2.gif" width="12%" style="background: none; vertical-align: text-bottom; border-radius: 0; padding: 0;">&nbsp;2023/11 -- One paper has been accepted by <strong>International Journal of Computer Vision</strong>(JCR Q1， CCF-A).</li>
+                                    </div>
+                                </ul>
+			        <div class="grid3-content">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                
+                <div class="widget-container">
+		 	<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=tNb2z5y7C1yXd-vX-qZxQ8mJiAKeMEvkyLrktxOYxfI"></script>
+		</div>
+
+
+	
+            		<script type="text/javascript" src="./files/jquery.min.js.下载"></script>
+            		<script type="text/javascript" src="./files/bootstrap.js.下载"></script>
+            		<script type="text/javascript" src="./files/jquery.banner.js.下载"></script>
+            		<script type="text/javascript" src="./files/jquery.prettyPhoto.js.下载"></script>		
+            		<script type="text/javascript" src="./files/jquery.isotope.js.下载"></script>	
+            		<script type="text/javascript" src="./files/main.js.下载"></script>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="csstransforms csstransforms3d csstransitions">
+<!-- saved from url=https://rmcong.github.io/index.html -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Huafeng Li</title>
+    <link href="./files/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./files/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./files/prettyPhoto.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./files/css" rel="stylesheet" type="text/css">
+    <style>
+        /* 重置浏览器默认边距 */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .people-photo {
+            border-radius: 50%;
+            height: 200px !important;
+            width: 200px !important;
+            box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 5px;
+        }
+        .thumbnail-mvp {
+            padding: 4px;
+            margin-bottom: 20px;
+            line-height: 1.42857143;
+            text-align: center;
+        }
+        .thumbnail-people {
+            padding: 4px;
+            margin-bottom: 5px;
+            line-height: 1.42857143;
+            text-align: center;
+        }
+        .container-fluid {
+            font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        .academicegree {
+            font-size: 2.28rem;
+            margin: 1.14rem 0 0.912rem 0;
+        }
+        .row:nth-child(2n) {
+            background: whitesmoke;
+        }
+        .row {
+            margin-bottom: 50px;
+        }
+        .people-topic {
+            font-style: italic;
+            color: #1a237e;
+        }
+        /* 侧边栏样式 */
+        .sidebar {
+            position: fixed;
+            top: 72px; /* 调整此值以确保侧边栏在导航栏下方 */
+            left: 0;
+            width: 300px; /* 将侧边栏宽度固定为400像素 */
+            padding: 0px;
+            background-color: #f5f5f5;
+            height: calc(100% - 80px); /* 高度减去导航栏高度 */
+            overflow-y: auto;
+        }
+        /* 内容区域样式 */
+        .main-content {
+            margin-left: 300px; /* 与侧边栏宽度一致 */
+            padding: 20px;
+            background-color: #ffffff; /* 将背景色改为 #ffffff */
+        }
+        /* 响应式布局 */
+        @media (max-width: 767px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                top: 0;
+            }
+            .main-content {
+                margin-left: 0;
+            }
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .content {
+            margin-top: 80px; /* 与导航栏高度一致 */
+        }
+    </style>
+</head>
+<body>
+    <!---start-header--->
+    <div class="header">
+        <div class="wrap">
+            <!---start-logo--->
+            <div class="logo">
+                <a href="./index.html">Huafeng Li</a>
+            </div>
+            <!---End-logo--->
+            <!---start-top-nav--->
+            <div class="top-nav">
+                <ul>
+                    <li id="Home" onclick="func('Me')"><a href="./index.html" class="scroll">Home</a></li>
+                    <li id="Profile" onclick="func('Profile')"><a href="./Profile.html" class="scroll">Profile</a></li>
+                    <li id="Publications" onclick="func('Publications')"><a href="./Publication.html" class="scroll">Publications</a></li>
+                    <li id="MVPLab" onclick="func('MVP Lab')"><a href="./CVIP.html" class="scroll">CVIP Group</a></li>
+                    <!-- <li id="Profile-chinese" onclick="func('Profile-chinese')"><a href="./Profile-chinese.html" class="scroll">中文简介</a></li> -->
+                    <li id="Contact" onclick="func('Contact')"><a href="./Contact.html" class="scroll">Contact</a></li>
+                </ul>
+            </div>
+            <div class="clear"> </div>
+            <!---End-top-nav--->
+         </div>
+    </div>
+
+    <script> 
+    var lastname = 'Me';
+    function func(name){
+        var div = document.getElementById(name); 
+        div.className = 'active'; 
+        div = document.getElementById(lastname); 
+        div.className = ''; 
+        lastname = name;
+    }
+    function coming_soon()
+    {
+        alert("Coming soon.");
+    }
+    </script> 
+
+    <!---End-header--->
+    <div class="content">
+        <div class="container-fluid">
+            <!-- 侧边栏 -->
+            <div class="sidebar">
+                <!-- 侧边栏内容 -->
+                <br>
+                <br>
+                <br>
+                <div class="thumbnail-people">
+                    <a href="#">
+                        <img src="./sub_img/touxiang.png" class="people-photo">
+                    </a>
+                </div>
+                <br>
+                <ul style="text-align: center; list-style: none; padding: 0;">
+
+                    <li><strong>Huafeng Li</strong></li><br>
+                    <li>Professor@Kust</li><br>
+                    <li>Kunming Yunnan China</li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <ul style="text-align: center; list-style: none; padding: 0;">
+                    
+                    <li><a href="mailto:hfchina99@163.com">Email</a></li><br>
+                    <li><a href="https://github.com/lhf12278">Github</a></li><br>
+                    <li><a href="https://scholar.google.com/citations?user=njjX8D0AAAAJ&hl=en&oi=ao">Google Scholar</a></li><br>
+
+                </ul>
+            </div>
+            <!-- 主内容区域 -->
+            <div class="main-content">
+                <div class="content">
+        <div class="grid3">
+            <div class="grid3-content">
+                
+        <h3><b>Profile:
+        <!--<a href="Profile-chinese.html">
+                <button class="btn"  style="background-color: #FAEBD7; width: 76px; height: 36px; color: #0000FF; border:none">
+                <strong><font size="4" face="STXinwei">中&nbsp;&nbsp;文</font></strong>
+            </button>
+                </a> -->
+            </b></h3>
+                
+        <ul class="graid3-ul" style="list-style-type:none; ">
+            <div style="text-align: justify; display: block; margin-right: auto;">      
+                
+<li> 
+<p><strong>Huafeng Li (<font face="STXinwei">李华锋</font>)</strong>, a Professor with the School of Faculty of Information Engineering and Automation, Kunming University of Science and Technology (KUST), Kunming, China. Dr. Li is the director of Computer Vision and Image Processing Group (CVIP Group), which is affiliated to the Key Laboratory of Artificial Intelligence in Yunnan Province.
+      Dr. Li is the director of Computer Vision and Image Processing Group (CVIP Group), which is affiliated to the Key Laboratory of Artificial Intelligence in Yunnan Province. 
+      He received the Ph.D. degree in Control Theory and Control Engineering from Chongqing University, Chongqing, China, in December 2012. 
+      His current research interests include Computer Vision, Image Registration and Fusion, Multimedia Information Processing and Retrieval, Medical Image Processing and Segmentation, Visual grounding, Person Re-identification, Remote Sensing Image Interpretation. 
+      Dr. Li was the World’s Top 2% Scientists (2020, 2021, 2024), Xingdian Elite Youth Top Notch Talents of Yunnan Province, the Young Editor of the Journal of Chongqing University. 
+      Currently, he has published over 60 papers in <strong>CVPR</strong>, <strong>AAAI</strong>, <strong>ACMMM</strong>, <strong>ICME</strong>, <strong>IJCV</strong>, <strong>IEEE TIP</strong>, <strong>IEEE TIFS</strong>, <strong>IEEE TNNLS</strong>, <strong>IEEE TMM</strong>, <strong>IEEE TII</strong> , <strong>IEEE TCSVT</strong>, <strong>IEEE TGRS</strong>, <strong>IEEE TCI</strong>, <strong>IEEE TETCI</strong>, <strong>IEEE TIM</strong>, <strong>IEEE TITS</strong>, <strong>IEEE/CAA JAS</strong>, <strong>PR</strong>, <strong>INS</strong>, <strong>INFFUS</strong>, <strong>NeuNet</strong>, <strong>KBS</strong>, <strong>ESWA</strong>, etc. 
+      He has served for over 30 journals and conferences as reviewer or PC member, including <strong>CVPR</strong>, <strong>ECCV</strong>, <strong>AAAI</strong>, <strong>ACMMM</strong>, <strong>PRCV</strong>, <strong>WACV</strong>, <strong>IJCV</strong>, <strong>IEEE TIP</strong>, <strong>IEEE TIFS</strong>, <strong>IEEE TNNLS</strong>, <strong>IEEE TCYB</strong>, <strong>IEEE TIM</strong>, <strong>IEEE/CAA JAS</strong>, <strong>IEEE TCSVT</strong>, <strong>IEEE TETCI</strong>, <strong>IEEE TMM</strong>, <strong>INFFUS</strong>, <strong>NeuNet</strong>, <strong>KBS</strong>, <strong>ESWA</strong>, etc.
+      
+    </br>
+
+</li>
+</ul>
+<hr />              
+    
+
+<h3><b>Research Interests:</b></h3>
+<ul class="graid3-ul" style="list-style-type:disc;">
+<div style="text-align: justify; display: block; margin-right: auto;">
+
+<li> <strong>Computer Vision</strong>: </br>
+Exploring core technologies and methodologies in computer vision, including object detection, tracking, image recognition, and scene understanding.</li>
+
+<li> <strong>Image Registration and Fusion</strong>: </br>
+Investigating techniques for aligning and merging images from various sources, including multi-modal and multi-temporal data, to enhance visual content representation.</li>
+
+<li> <strong>Multimedia Information Processing and Retrieval</strong>: </br>
+Developing solutions for multimedia data analysis, content-based retrieval, and cross-modal information understanding for various applications.</li>
+
+<li> <strong>Medical Image Processing and Segmentation</strong>: </br>
+Exploring methods for enhancing and segmenting medical images to support diagnosis, treatment planning, and medical research.</li>
+
+<li> <strong>Visual Grounding</strong>: </br>
+Investigating techniques for linking language and visual content, such as referring expression comprehension and visual-language interaction.</li>
+
+<li> <strong>Person Re-identification</strong>: </br>
+Researching solutions for person identification and tracking across non-overlapping camera views in surveillance and other applications.</li>
+
+<li> <strong>Remote Sensing Image Interpretation</strong>: </br>
+Developing methodologies for the classification, segmentation, and analysis of optical remote sensing images, radar data, UAV images, and hyperspectral images.</li>
+
+  </ul>
+  <hr />    
+
+
+
+<h3><b>Research Projects:</b></h3>
+<ul class="graid3-ul" style="list-style-type:disc;">
+<div style="text-align: justify; display: block; margin-right: auto;">
+
+<li> <strong>Intelligent defect identification system of transmission line</strong></br>
+    Combined with the needs of intelligent transmission line inspection and maintenance, the intelligent identification system of transmission line defects is developed.The system supports transmission line image quality judgment, high-definition of low-quality images, image content verification, and intelligent labeling and recognition of more than 20 kinds of defects such as insulator self-explosion, bird's nest, pollutants, broken wire, shock hammer corrosion, shock hammer damage, sign fading, and sign damage, which improves the intelligent inspection level of transmission lines.</li>
+<li> <strong>Pedestrian Detection and Re-identification System for Complex Scenarios</strong></br>
+    The pedestrian detection system can locate pedestrians present in images and count their numbers, with applications in areas such as vehicle-assisted driving and intelligent video surveillance.The pedestrian re-identification system can locate specific pedestrians present in images, applicable to intelligent video surveillance, smart security, and related fields.</li>
+    
+  </ul>
+    
+  <hr />    
+
+<h3><b>Honors & Awards:</b></h3>
+<ul class="graid3-ul" style="list-style-type:disc;">
+<div style="text-align: justify; display: block; margin-right: auto;">
+
+<li>World’s Top 2% Scientists, 2020.</li>
+<li>World’s Top 2% Scientists, 2021.</li>
+<li>World’s Top 2% Scientists, 2024.</li>
+<li>Xingdian Elite Youth Top Notch Talents of Yunnan Province.</li>
+<li>Winner of Yunnan Outstanding Youth Fund.</li>
+<li>Young talents of Yunnan Province "Xingdian Talents Support Program".</li>
+<li>the Young Editor of the Journal of Chongqing University.</li>
+  </ul>
+  <hr />
+
+            
+<h3><b>Academic Activities:</b></h3>
+                
+    
+<h4>&#10056 &nbsp;<b>Reviewer for Journals:</b></h4>
+<ul class="graid3-ul" style="list-style-type:disc;">
+<div style="text-align: justify; display: block; margin-right: auto;">      
+<li> International Journal of Computer Vision (IJCV)</li>
+<li> IEEE Transactions on Image Processing (TIP)</li>
+<li> IEEE Transactions on Information Forensics and Security (TIFS)</li>
+<li> IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</li>
+<li> IEEE Transactions on Cybernetics (TCYB)</li>
+<li> IEEE Transactions on Instrumentation and Measurement (TIM)</li>
+<li> IEEE/CAA Journal of Automatica Sinica (JAS)</li>
+<li> IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</li>
+<li> IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI)</li>
+<li> IEEE Transactions on Multimedia (TMM)</li>
+<li> Information Fusion (INFFUS)</li>
+<li> Neural Networks (NeuNet)</li>
+<li> Knowledge-Based Systems (KBS)</li>
+<li> Expert Systems with Applications (ESWA)</li>
+</ul>
+</br>   
+
+<h4>&#10056 &nbsp;<b>Area Chair/PC Member/Reviewer for Conferences:</b></h4>
+<ul class="graid3-ul" style="list-style-type:disc;">
+<div style="text-align: justify; display: block; margin-right: auto;">  
+<li> IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</li>
+<li> European Conference on Computer Vision (ECCV)</li>
+<li> AAAI Conference on Artificial Intelligence (AAAI)</li>
+<li> ACM International Conference on Multimedia (ACMMM)</li>
+<li> Chinese Conference on Pattern Recognition and Computer Vision (PRCV)</li>
+<li> IEEE Winter Conference on Applications of Computer Vision (WACV)</li>
+</ul>
+</br>  
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./files/jquery.min.js"></script>
+    <script type="text/javascript" src="./files/bootstrap.js"></script>
+    <script type="text/javascript" src="./files/jquery.banner.js"></script>
+    <script type="text/javascript" src="./files/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="./files/jquery.isotope.js"></script>
+    <script type="text/javascript" src="./files/main.js"></script>
+</body>
+</html>

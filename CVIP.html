@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html class="csstransforms csstransforms3d csstransitions">
+<!-- saved from url=https://rmcong.github.io/index.html -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Huafeng Li</title>
+    <link href="./files/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./files/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./files/prettyPhoto.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./files/css" rel="stylesheet" type="text/css">
+    <style>
+        /* 重置浏览器默认边距 */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .people-photo {
+            border-radius: 50%;
+            height: 200px !important;
+            width: 200px !important;
+            box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 5px;
+        }
+        .thumbnail-mvp {
+            padding: 4px;
+            margin-bottom: 20px;
+            line-height: 1.42857143;
+            text-align: center;
+        }
+        .thumbnail-people {
+            padding: 4px;
+            margin-bottom: 5px;
+            line-height: 1.42857143;
+            text-align: center;
+        }
+        .container-fluid {
+            font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+        .academicegree {
+            font-size: 2.28rem;
+            margin: 1.14rem 0 0.912rem 0;
+        }
+        .row:nth-child(2n) {
+            background: whitesmoke;
+        }
+        .row {
+            margin-bottom: 50px;
+        }
+        .people-topic {
+            font-style: italic;
+            color: #1a237e;
+        }
+        /* 侧边栏样式 */
+        .sidebar {
+            position: fixed;
+            top: 72px; /* 调整此值以确保侧边栏在导航栏下方 */
+            left: 0;
+            width: 300px; /* 将侧边栏宽度固定为400像素 */
+            padding: 0px;
+            background-color: #f5f5f5;
+            height: calc(100% - 80px); /* 高度减去导航栏高度 */
+            overflow-y: auto;
+        }
+        /* 内容区域样式 */
+        .main-content {
+            margin-left: 300px; /* 与侧边栏宽度一致 */
+            padding: 20px;
+            background-color: #ffffff; /* 将背景色改为 #ffffff */
+        }
+        /* 响应式布局 */
+        @media (max-width: 767px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                top: 0;
+            }
+            .main-content {
+                margin-left: 0;
+            }
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .content {
+            margin-top: 80px; /* 与导航栏高度一致 */
+        }
+    </style>
+</head>
+<body>
+    <!---start-header--->
+    <div class="header">
+        <div class="wrap">
+            <!---start-logo--->
+            <div class="logo">
+                <a href="./index.html">Huafeng Li</a>
+            </div>
+            <!---End-logo--->
+            <!---start-top-nav--->
+            <div class="top-nav">
+                <ul>
+                    <li id="Home" onclick="func('Me')"><a href="./index.html" class="scroll">Home</a></li>
+                    <li id="Profile" onclick="func('Profile')"><a href="./Profile.html" class="scroll">Profile</a></li>
+                    <li id="Publications" onclick="func('Publications')"><a href="./Publication.html" class="scroll">Publications</a></li>
+                    <li id="MVPLab" onclick="func('MVP Lab')"><a href="./CVIP.html" class="scroll">CVIP Group</a></li>
+                    <!-- <li id="Profile-chinese" onclick="func('Profile-chinese')"><a href="./Profile-chinese.html" class="scroll">中文简介</a></li> -->
+                    <li id="Contact" onclick="func('Contact')"><a href="./Contact.html" class="scroll">Contact</a></li>
+                </ul>
+            </div>
+            <div class="clear"> </div>
+            <!---End-top-nav--->
+         </div>
+    </div>
+
+    <script> 
+    var lastname = 'Me';
+    function func(name){
+        var div = document.getElementById(name); 
+        div.className = 'active'; 
+        div = document.getElementById(lastname); 
+        div.className = ''; 
+        lastname = name;
+    }
+    function coming_soon()
+    {
+        alert("Coming soon.");
+    }
+    </script> 
+
+    <!---End-header--->
+    <div class="content">
+        <div class="container-fluid">
+            <!-- 侧边栏 -->
+            <div class="sidebar">
+                <!-- 侧边栏内容 -->
+                <br>
+                <br>
+                <br>
+                <div class="thumbnail-people">
+                    <a href="#">
+                        <img src="./sub_img/touxiang.png" class="people-photo">
+                    </a>
+                </div>
+                <br>
+                <ul style="text-align: center; list-style: none; padding: 0;">
+                    <li><strong>Huafeng Li</strong></li><br>
+                    <li>Professor@Kust</li><br>
+		    <li>Kunming Yunnan China</li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <ul style="text-align: center; list-style: none; padding: 0;">
+                    <li><a href="mailto:hfchina99@163.com">Email</a></li><br>
+                    <li><a href="https://github.com/lhf12278">Github</a></li><br>
+                    <li><a href="https://scholar.google.com/citations?user=njjX8D0AAAAJ&hl=en&oi=ao">Google Scholar</a></li><br>
+
+                </ul>
+            </div>
+            <!-- 主内容区域 -->
+            <div class="main-content">
+                <div class="container" style="margin-top: 150px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="thumbnail-mvp">
+                        <a href="#">
+                            <img src="./MVPLab/CVIP.png">
+                        </a>
+                        </br>
+
+                    </br>
+                       
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 academicegree">
+                    <h4 class="text-center  black-text">Faculty</h4>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./sub_img/touxiang.png" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b><a href="#"  target="_blank"><font color="#1C86EE">Huafeng Li (李华锋)</font></a></b></h3>
+                            <p>Professor, Director</p>
+                            <p>云南省杰出青年基金获得者 </br>
+                             云南省“兴滇英才支持计划”青年人才 </br>
+                            中国人工智能学会智能服务专业委员会委员  </br>
+                        	CSIG机器视觉专委会委员 </p>
+                            <p class="people-topic">Computer Vision, Multimedia Computing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/zhangyafei.png" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b><a href="https://liip.kust.edu.cn/QTGL/CyxxView.do?xh=00277"  target="_blank"><font color="#1C86EE">Yafei Zhang (张亚飞)</font></a></b></h3>
+                            <p>Associate professor, Director</p>
+                            <p>云南省“兴滇英才支持计划”青年人才获得者</p>
+                            <p class="people-topic">
+                            Image Processing</br> Pattern Recognition</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/xieminghong.png" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b><a href="https://xzy.kmust.edu.cn/info/1129/1221.htm"  target="_blank"><font color="#1C86EE">Minghong Xie (谢明鸿)</font></a></b></h3>
+                            <p>Director</p>
+                            <p>高级工程师</p>
+                            <p class="people-topic">
+                            Person Re-ID</br>
+                            Image Super Resolution</br>
+                            Image Fusion</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+   <!-- ------------------博士研究生--------------------- -->
+        <div class="row">
+                <div class="col-md-12 academicegree">
+                    <h4 class="text-center  black-text">PhD Students</h4>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/chenyida.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Yida Chen</b> (陈益达)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>PhD@Kust, 2023 - present</p>
+                            <p class="people-topic">Image Registration/Fusion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/dukeying.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Keying Du</b> (都柯颖)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>PhD@Kust, 2024 - present</p>
+                            <p class="people-topic">Image Registration/Fusion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    <!-- ------------------硕士研究生--------------------- -->
+            <div class="row">
+                <div class="col-md-12 academicegree">
+                    <h4 class="text-center  black-text">MS Students</h4>
+                </div>
+                
+                
+
+
+                <div class="col-md-3">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/luojuncheng.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Juncheng Luo</b> (罗俊成)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>MS@Kust, 2022 - present</p>
+                            <p class="people-topic">Multi-Exposure Fusion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/renshuangde.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Shuangde Ren</b> (任双得)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>MS@Kust, 2022 - present</p>
+                            <p class="people-topic">Image Restoration</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/wangmengzhao.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Mengzhao Wang</b> (王盟召)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>MS@Kust, 2022 - present</p>
+                            <p class="people-topic">Video Caption</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/yangzengyi.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Zengyi Yang</b> (杨增轶)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>MS@Kust, 2022 - present</p>
+                            <p class="people-topic">Multi-modal Fusion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/zhangruiqi.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Ruiqi Zhang</b> (章瑞琪)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>MS@Kust, 2022 - present</p>
+                            <p class="people-topic">Video searching</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/zhoushen.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Shen Zhou</b> (周沈)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>MS@Kust, 2022 - present</p>
+                            <p class="people-topic">Image Restoration</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/zuozhigang.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Zhigang Zuo</b> (左志刚)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>MS@Kust, 2022 - present</p>
+                            <p class="people-topic">Person Re-ID</p>
+                        </div>
+                    </div>
+                </div>
+
+		<div class="col-md-3">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/unknown.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Junchao Ge</b> (葛俊超)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>MS@Kust, 2022 - present</p>
+                            <p class="people-topic">Person Re-ID</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!----------------------------- 研二 -------------------------------->
+
+
+                <div class="col-md-3">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/fangjiaqi.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Jiaqi Fang</b> (方佳奇)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>MS@Kust, 2023 - present</p>
+                            <p class="people-topic">Image Fusion</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/konglingqi.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Lingqi Kong</b> (孔令奇)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>MS@Kust, 2023 - present</p>
+                            <p class="people-topic">Person Re-ID</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/lihao.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Hao Li</b> (李浩)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>MS@Kust, 2023 - present</p>
+                            <p class="people-topic">Change Caption</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/shangyongle.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Yongle Shang</b> (尚永乐)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>MS@Kust, 2023 - present</p>
+                            <p class="people-topic">Person Re-ID</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/shiyaohua.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Yaohua Shi</b> (施耀华)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>MS@Kust, 2023 - present</p>
+                            <p class="people-topic">Under Exposure Image Fusion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="thumbnail-people">
+                        <a href="#">
+                            <img src="./MVPLab/songshuaitian.jpg" class="people-photo">
+                        </a>
+                        <div class="caption">
+                            <h3><b>Shuaitian Song</b> (宋帅田)</h3>
+                            <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+                            <p>MS@Kust, 2023 - present</p>
+                            <p class="people-topic">Dehazing</p>
+                        </div>
+                    </div>
+                </div>
+
+	            <div class="col-md-3">
+	                <div class="thumbnail-people">
+	                    <a href="#">
+	                        <img src="./MVPLab/sudayong.jpg" class="people-photo">
+	                    </a>
+	                    <div class="caption">
+	                        <h3><b>Dayong Su</b> (苏大勇)</h3>
+	                        <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+	                        <p>MS@Kust, 2023 - present</p>
+	                        <p class="people-topic">Medical Image Fusion</p>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="col-md-3">
+	                <div class="thumbnail-people">
+	                    <a href="#">
+	                        <img src="./MVPLab/zhangyamin.jpg" class="people-photo">
+	                    </a>
+	                    <div class="caption">
+	                        <h3><b>Yamin Zhang</b> (张亚敏)</h3>
+	                        <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+	                        <p>MS@Kust, 2023 - present</p>
+	                        <p class="people-topic">Change Caption</p>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="col-md-3">
+	                <div class="thumbnail-people">
+	                    <a href="#">
+	                        <img src="./MVPLab/zhoulinhan.jpg" class="people-photo">
+	                    </a>
+	                    <div class="caption">
+	                        <h3><b>Linhan Zhou</b> (周林翰)</h3>
+	                        <!-- <p>co-supervised with Prof. Sam Kwong</p>   -->
+	                        <p>MS@Kust, 2023 - present</p>
+	                        <p class="people-topic">Person Re-ID</p>
+	                    </div>
+	                </div>
+	            </div>
+
+
+                 <!---------------- 研一 ------------------->
+
+
+                 <div class="col-md-3">
+	                <div class="thumbnail-people">
+	                    <a href="#">
+	                        <img src="./MVPLab/chenwei.jpg" class="people-photo">
+	                    </a>
+	                    <div class="caption">
+	                        <h3><b>Wei Chen</b> (陈伟)</h3>
+	                        <p>MS@Kust, 2024 - present</p>
+	                        <p class="people-topic">#</p>
+	                    </div>
+	                </div>
+	            </div>
+
+	            <div class="col-md-3">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/hongzhenyu.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Zhenyu Hong</b> (洪振瑜)</h3>
+				            <p>MS@Kust, 2024 - present</p>
+				            <p class="people-topic">#</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-3">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/laiyingxian.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Yingxian Lai</b> (赖盈先)</h3>
+				            <p>MS@Kust, 2024 - present</p>
+				            <p class="people-topic">#</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-3">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/liminghui.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Minghui Li</b> (李明辉)</h3>
+				            <p>MS@Kust, 2024 - present</p>
+				            <p class="people-topic">#</p>
+				        </div>
+				    </div>
+				</div>
+				<div class="col-md-3">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/mameng.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Meng Ma</b> (马孟)</h3>
+				            <p>MS@Kust, 2024 - present</p>
+				            <p class="people-topic">#</p>
+				        </div>
+				    </div>
+				</div>
+				<div class="col-md-3">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/shenwanghuan.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Wanghuan Shen</b> (沈王焕)</h3>
+				            <p>MS@Kust, 2024 - present</p>
+				            <p class="people-topic">#</p>
+				        </div>
+				    </div>
+				</div>
+				<div class="col-md-3">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/wangzhouqiang.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Zhouqiang Wang</b> (王周强)</h3>
+				            <p>MS@Kust, 2024 - present</p>
+				            <p class="people-topic">#</p>
+				        </div>
+				    </div>
+				</div>
+				<div class="col-md-3">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/xujiahui.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Jiahui Xu</b> (徐嘉徽)</h3>
+				            <p>MS@Kust, 2024 - present</p>
+				            <p class="people-topic">#</p>
+				        </div>
+				    </div>
+				</div>
+				<div class="col-md-3">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/zhaojialong.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Jialong Zhao</b> (赵嘉龙)</h3>
+				            <p>MS@Kust, 2024 - present</p>
+				            <p class="people-topic">#</p>
+				        </div>
+				    </div>
+				</div>
+				<div class="col-md-3">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/zhengyun.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Yun Zheng</b> (郑芸)</h3>
+				            <p>MS@Kust, 2024 - present</p>
+				            <p class="people-topic">#</p>
+				        </div>
+				    </div>
+				</div>
+				<div class="col-md-3">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/zhouyuman.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Yuman Zhou</b> (周妤蔓)</h3>
+				            <p>MS@Kust, 2024 - present</p>
+				            <p class="people-topic">#</p>
+				        </div>
+				    </div>
+				</div>
+				<div class="col-md-3">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/zhusheng.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Sheng Zhu</b> (朱圣)</h3>
+				            <p>MS@Kust, 2024 - present</p>
+				            <p class="people-topic">#</p>
+				        </div>
+				    </div>
+				</div>
+
+
+            </div>
+
+
+    <!-- ------------------毕业学生--------------------- -->        
+            <div class="row">
+                <div class="col-md-12 academicegree">
+                    <h4 class="text-center  black-text">Alumni</h4>
+                </div>
+
+                <div class="col-md-4">
+				    <div class="thumbnail-people">	
+				        <a href="#">
+				            <img src="./MVPLab/lixiaosong.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Xiaosong Li</b> (李小松)</h3> 
+				            <p>Now: 北京航空航天大学博士，佛山科技学院讲师</p>
+				        </div>
+				    </div>
+				</div>
+ 				
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/wangyitang.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Yitang Wang</b> (王一棠)</h3> 
+				            <p>Now: 大连理工大学博士</p>
+				        </div>
+				    </div>
+				</div>	
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/kuangzhenyu.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Zhenyu Kuang</b> (匡振宇)</h3> 
+				            <p>Now: 厦门大学博士</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/yanshuanglin.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Shuanglin Yan</b> (严双林)</h3> 
+				            <p>Now: 南京理工大学博士</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/yangmoyuan.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Moyuan Yang</b> (杨默远)</h3> 
+				            <p>Now: 北方夜视研究院</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/dongneng.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Neng Dong</b> (董能)</h3> 
+				            <p>Now: 南京理工大学博士</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/chenyiwen.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Yiwen Chen</b> (陈怡文)</h3> 
+				            <p>Now: 武汉大学博士</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/pangjian.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Jian Pang</b> (庞健)</h3> 
+				            <p>Now: 中国石油大学博士</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/cenyueliang.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Yueliang Cen</b> (岑悦亮)</h3> 
+				            <p>Now: 商汤科技</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/xukaixiong.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Kaixiong Xu</b> (徐开雄)</h3> 
+				            <p>Now: 重庆大学博士</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/lishuang.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Shuang Li</b> (李爽)</h3> 
+				            <p>Now: 重庆邮电大学博士</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/liuminghui.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Minghui Liu</b> (刘明慧)</h3> 
+				            <p>Now: 山东大学博士</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/zujinting.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Jinting Ting</b> (竹晋廷)</h3> 
+				            <p>Now: 新西兰东部理工学院讲师</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/zhaodandan.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Dandan Zhao</b> (赵丹丹)</h3> 
+				            <p>Now: 重庆大学博士</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Zhiyuan Liu</b> (刘志远)</h3> 
+				            <p>Now: 复旦大学博士</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Xinkun Liu</b> (刘鑫坤)</h3> 
+				            <p>Now: 北京中国邮政储蓄</p>
+				        </div>
+				    </div>
+				</div>
+
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Xiaoge He</b> (和晓歌)</h3> 
+				            <p>Now: 南京航空航天大学博士</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Jinting Zhu</b> (竹晋廷)</h3> 
+				            <p>Now: 新西兰梅西大学博士</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Zhihua Deng</b> (邓志华)</h3> 
+				            <p>Now: 武汉理工大学博士</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Jiajia Xu</b> (许佳佳)</h3> 
+				            <p>Now: 华南理工大学博士</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Weiyan Zhou</b> (周维燕)</h3> 
+				            <p>Now: 温州中国建设银行</p>
+				        </div>
+				    </div>
+				</div>
+
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Sheng Chen</b> (陈升)</h3> 
+				            <p>Now: 格力电器</p>
+				        </div>
+				    </div>
+				</div>
+
+				
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Lingli Li</b> (李玲莉)</h3> 
+				            <p>Now: 重庆紫光展锐</p>
+				        </div>
+				    </div>
+				</div>
+
+				
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Lu Zhou</b> (周炉)</h3> 
+				            <p>Now: 新浪微博</p>
+				        </div>
+				    </div>
+				</div>
+
+				
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Lei Wan</b> (万磊)</h3> 
+				            <p>Now: 中信银行股份有限公司</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Junyu Liu</b> (刘俊宇)</h3> 
+				            <p>Now: 重庆傲雄信息技术公司</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Jisheng Jiang</b> (姜继升)</h3> 
+				            <p>Now: 国家能源集团</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Le Xu</b> (许乐)</h3> 
+				            <p>Now: 交通银行软件开发中心（北京）</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Linbo Shi</b> (石林波)</h3> 
+				            <p>Now: 交通银行软件开发中心（成都）</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Junzhi Zhao</b> (赵军智)</h3> 
+				            <p>Now: 上海华讯网络系统有限公司</p>
+				        </div>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+				    <div class="thumbnail-people">
+				        <a href="#">
+				            <img src="./MVPLab/unknown.jpg" class="people-photo">
+				        </a>
+				        <div class="caption">
+				            <h3><b>Yang Yang</b> (杨阳)</h3> 
+				            <p>Now: 曲靖卷烟厂</p>
+				        </div>
+				    </div>
+				</div>
+
+				
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./files/jquery.min.js"></script>
+    <script type="text/javascript" src="./files/bootstrap.js"></script>
+    <script type="text/javascript" src="./files/jquery.banner.js"></script>
+    <script type="text/javascript" src="./files/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="./files/jquery.isotope.js"></script>
+    <script type="text/javascript" src="./files/main.js"></script>
+</body>
+</html>
